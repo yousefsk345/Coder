@@ -2,6 +2,8 @@ let tweetBtn = document.getElementById("tweet");
 let inputEl = document.getElementById("input-el");
 let submitBtn = document.getElementById("submit");
 let posts = document.querySelector(".posts");
+let userName = document.getElementById("user-name");
+userName.textContent = localStorage.getItem("userName");
 posts.innerHTML = localStorage.getItem("posts");
 tweetBtn.addEventListener("click", function () {
   inputEl.focus();

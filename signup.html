@@ -15,24 +15,23 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
-    <title>Log in</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign up</title>
   </head>
   <body>
     <div class="container">
-      <form action="site/tweet.html" class="log-in">
-        <h2 class="title">Log in</h2>
+      <form action="index.html" class="log-in">
+        <h2 class="title">Sign up</h2>
         <div class="input-field">
           <i class="fas fa-user"></i>
-          <input type="text" placeholder="Username" id="name" />
+          <input type="text" placeholder="Username" id="name"/>
         </div>
         <div class="input-field">
           <i class="fas fa-lock"></i>
-          <input type="password" placeholder="Password" id="pass"/>
+          <input type="password" placeholder="Password" id="pass" />
         </div>
-        <input type="submit" value="Login" class="btn"/>
-        <p id="invalid"></p>
-        <p class="socail-text">Or Sign in with socail platform</p>
+        <input type="submit" value="Sign up" class="btn" />
+        <p class="socail-text">Or Sign up with socail platform</p>
         <div class="socail-media">
           <a href="#" class="socail-icon">
             <i class="fab fa-facebook"></i>
@@ -48,10 +47,11 @@
           </a>
         </div>
         <p class="account-text">
-          Don't have an account? <a href="signup.html" id="sign-up-btn2">Sign Up</a>
+          Already have an account?
+          <a href="index.html" id="sign-up-btn2">Log in</a>
         </p>
       </form>
     </div>
-    <script src="login.js"></script>
+    <script src="signup.js"></script>
   </body>
 </html>
