@@ -100,15 +100,16 @@ form .btn {
 }
 
 /* Responsive */
-
+@media (max-width:550px) {
+    .container{
+        width: 100% !important;
+        margin: 0 20px;
+        height: 450px;
+    }
+}
 @media (max-width:991px) {
     .container{
         width: 60vw;
-    }
-}
-@media (max-width:550px) {
-    .container{
-        width: 100%;
-        margin: 0 20px;
+        height: 450px;
     }
 }
