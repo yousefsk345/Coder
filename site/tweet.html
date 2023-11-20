@@ -14,105 +14,126 @@
     <title>Coder</title>
   </head>
   <body>
-    <div class="nav-bar">
-      <h2 class="logo">Coder</h2>
-      <div class="search">
-        <input type="text" placeholder="Search" />
-      </div>
-      <div class="profile-section">
-        <img src="avatar.jpg" alt="avatar" class="avatar" />
+    <div class="container">
+      <div class="nav-bar">
+        <h2 class="logo">Coder</h2>
+        <div class="links-section">
+          <div class="menu">
+            <ul class="sidebar">
+              <li><i class="fa-solid fa-xmark" id="hideSidebar"></i></li>
+              <li class="hoverd">
+                <i class="fa-solid fa-house"></i><a href="#">Home</a>
+              </li>
+              <li><i class="fa-solid fa-fire"></i><a href="#">For You</a></li>
+              <li>
+                <i class="fa-solid fa-bell"></i><a href="#">Notification</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-bookmark"></i><a href="#">Bookmarks</a>
+              </li>
+              <li><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
+            </ul>
+            <ul>
+              <li class="hoverd hide-on-mobile">
+                <i class="fa-solid fa-house"></i><a href="#">Home</a>
+              </li>
+              <li class="hide-on-mobile"><i class="fa-solid fa-fire"></i><a href="#">For You</a></li>
+              <li class="hide-on-mobile">
+                <i class="fa-solid fa-bell"></i><a href="#">Notification</a>
+              </li>
+              <li class="hide-on-mobile">
+                <i class="fa-solid fa-bookmark"></i><a href="#">Bookmarks</a>
+              </li>
+              <li class="hide-on-mobile"><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
+              <li><i class="fa-solid fa-bars" id="showSidebar"></i></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="profile-section">
+        <img src="profile.webp" alt="avatar" class="avatar" />
         <div class="name">
           <h3 id="user-name">Yousef</h3>
           <p>@r_1</p>
         </div>
+      </div> -->
       </div>
-    </div>
-    <div class="page">
-      <div class="links-section">
-        <div class="menu">
-          <ul>
-            <li class="hoverd">
-              <i class="fa-solid fa-house"></i><a href="#">Home</a>
-            </li>
-            <li><i class="fa-solid fa-fire"></i><a href="#">For You</a></li>
-            <li>
-              <i class="fa-solid fa-bell"></i><a href="#">Notification</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-bookmark"></i><a href="#">Bookmarks</a>
-            </li>
-            <li><i class="fa-solid fa-user"></i><a href="#">Profile</a></li>
-          </ul>
-          <button id="tweet">Tweet</button>
+      <div class="page">
+        <div class="feed-section">
+          <div class="story">
+            <ul>
+              <li>
+                <label for="story"><img src="add.png" alt="" /></label>
+                <input type="file" id="story" class="story-input" />
+              </li>
+              <li><img src="profile.webp" class="friends-story" alt="friends story" /></li>
+              <li><img src="profile.webp" class="friends-story" alt="friends story" /></li>
+              <li><img src="profile.webp" class="friends-story" alt="friends story" /></li>
+              <li><img src="profile.webp" class="friends-story" alt="friends story" /></li>
+              <li><img src="profile.webp" class="friends-story" alt="friends story" /></li>
+              <li><img src="profile.webp" class="friends-story" alt="friends story" /></li>
+              <li><img src="profile.webp" class="friends-story" alt="friends story" /></li>
+            </ul>
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              id="input-el"
+              placeholder="What is happening?!"
+            />
+            <button id="submit" class="submit">Tweet</button>
+          </div>
+          <div class="posts"></div>
         </div>
-      </div>
-      <div class="feed-section">
-        <div class="story">
-          <ul>
-            <li class="add">+</li>
-            <li><img src="avatar.jpg" alt="" /></li>
-            <li><img src="avatar.jpg" alt="" /></li>
-            <li><img src="avatar.jpg" alt="" /></li>
-            <li><img src="avatar.jpg" alt="" /></li>
-            <li><img src="avatar.jpg" alt="" /></li>
-            <li><img src="avatar.jpg" alt="" /></li>
-            <li><img src="avatar.jpg" alt="" /></li>
-          </ul>
+        <div class="trending-section">
+          <div class="head">
+            <h3>Trending <i class="fa-solid fa-arrow-trend-up"></i></h3>
+            <p>Today</p>
+          </div>
+          <div class="content">
+            <div class="trend">
+              <div>1. #Palestine</div>
+              <div>1000 tweet</div>
+            </div>
+            <div class="trend">
+              <div>2. #Palestine</div>
+              <div>1000 tweet</div>
+            </div>
+            <div class="trend">
+              <div>3. #Palestine</div>
+              <div>1000 tweet</div>
+            </div>
+            <div class="trend">
+              <div>4. #Palestine</div>
+              <div>1000 tweet</div>
+            </div>
+            <div class="trend">
+              <div>5. #Palestine</div>
+              <div>1000 tweet</div>
+            </div>
+            <div class="trend">
+              <div>6. #Palestine</div>
+              <div>1000 tweet</div>
+            </div>
+            <div class="trend">
+              <div>7. #Palestine</div>
+              <div>1000 tweet</div>
+            </div>
+            <div class="trend">
+              <div>8. #Palestine</div>
+              <div>1000 tweet</div>
+            </div>
+            <div class="trend">
+              <div>9. #Palestine</div>
+              <div>1000 tweet</div>
+            </div>
+            <div class="trend">
+              <div>10. #Palestine</div>
+              <div>1000 tweet</div>
+            </div>
+          </div>
+          <p class="more">Show More</p>
         </div>
-        <div class="input-field">
-          <input type="text" id="input-el" placeholder="What is happening?!" />
-          <button id="submit" class="submit">Tweet</button>
-        </div>
-        <div class="posts"></div>
-      </div>
-      <div class="trending-section">
-        <div class="head">
-          <h3>Trending <i class="fa-solid fa-arrow-trend-up"></i></h3>
-          <p>Today</p>
-        </div>
-        <div class="content">
-          <div class="trend">
-            <div>1. #Yousef</div>
-            <div>1000 tweet</div>
-          </div>
-          <div class="trend">
-            <div>2. #Yousef</div>
-            <div>1000 tweet</div>
-          </div>
-          <div class="trend">
-            <div>3. #Yousef</div>
-            <div>1000 tweet</div>
-          </div>
-          <div class="trend">
-            <div>4. #Yousef</div>
-            <div>1000 tweet</div>
-          </div>
-          <div class="trend">
-            <div>5. #Yousef</div>
-            <div>1000 tweet</div>
-          </div>
-          <div class="trend">
-            <div>6. #Yousef</div>
-            <div>1000 tweet</div>
-          </div>
-          <div class="trend">
-            <div>7. #Yousef</div>
-            <div>1000 tweet</div>
-          </div>
-          <div class="trend">
-            <div>8. #Yousef</div>
-            <div>1000 tweet</div>
-          </div>
-          <div class="trend">
-            <div>9. #Yousef</div>
-            <div>1000 tweet</div>
-          </div>
-          <div class="trend">
-            <div>10. #Yousef</div>
-            <div>1000 tweet</div>
-          </div>
-        </div>
-        <p class="more">Show More</p>
       </div>
     </div>
     <script src="script.js"></script>

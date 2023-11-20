@@ -7,7 +7,7 @@ btn.addEventListener("click", function () {
   let getName = localStorage.getItem("userName");
   let getPass = localStorage.getItem("userPass");
   if (name == getName) {
-    if ((pass = getPass)) {
+    if ((pass == getPass)) {
     } else {
         document.getElementById("invalid").textContent =
         "Invalid Data, Try Again";
